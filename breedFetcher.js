@@ -10,7 +10,7 @@ request(
     const data = JSON.parse(body); //parse page data into JSON
     if (data.length === 0) {
       return console.log(`Error : Breed "${breedInput}" not found.`);
-    }else {
+    } else {
       console.log(data[0].description);
     }
   }
